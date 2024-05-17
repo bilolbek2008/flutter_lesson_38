@@ -209,17 +209,6 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(
                   height: 80,
                 ),
-
-                TextButton(onPressed: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const login3(),
-                    ),
-                  );
-
-
-                }, child: Text(" ")),
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(

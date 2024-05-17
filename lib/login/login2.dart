@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter38/login/login1.dart';
-import 'package:flutter38/login/login3.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -41,31 +40,30 @@ class _RegisterPageState extends State<RegisterPage> {
                   width: 200,
                   height: 200,
                 ),
-                const Text(
+                 Text(
                   "Your account has been created successfully",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold),
+                    fontSize: 20,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-                const SizedBox(
+                 SizedBox(
                   height: 20,
                 ),
-                const Text(
+                Text(
                   "Congratulations! You have successfully created your account.",
                   style: TextStyle(
-                      fontSize: 10,
-                      color: Colors.grey,
-                      fontWeight: FontWeight.bold),
+                    fontSize: 10,
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => LoginPage()), // Assuming Login3 is your next screen
-                    );
+                    Navigator.of(context).pop();
+                    Navigator.of(context).pop(user);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
